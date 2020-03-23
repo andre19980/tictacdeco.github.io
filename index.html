@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>TicTacDeco</title>
+</head>
+<body>
+    <div class="container">
+        <div class="game-init">
+            <div class="title text">
+                <div>TIC TAC</div>
+                <div>DECO</div>
+            </div>
+            <div class="start-button text">Start Game</div>
+        </div>
+        <div id="player-X" class="player text">
+            <div class="score">0</div>
+            <div class="name-container">
+                <div class="box"></div>
+                <div class="text">Player X</div>
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="board-container">
+            <div class="top-text text">Round 1</div>
+            <div class="board">
+                <div class="row">
+                    <div id="col-1" class="text"></div>
+                    <div id="col-2" class="text"></div>
+                    <div id="col-3" class="text"></div>
+                </div>
+                <div class="row">
+                    <div id="col-4" class="text"></div>
+                    <div id="col-5" class="text"></div>
+                    <div id="col-6" class="text"></div>
+                </div>
+                <div class="row">
+                    <div id="col-7" class="text"></div>
+                    <div id="col-8" class="text"></div>
+                    <div id="col-9" class="text"></div>
+                </div>
+            </div>
+            <div class="bottom-text text">X turn</div>
+        </div>
+        <div id="player-O" class="player text">
+            <div class="score">0</div>
+            <div class="name-container">
+                <div class="box"></div>
+                <div class="text">Player O</div>
+                <div class="box"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

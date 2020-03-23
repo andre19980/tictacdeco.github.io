@@ -1,0 +1,150 @@
+@font-face {
+    font-family: artDeco;
+    src: url(assets/fonts/ParkLaneNF.ttf);
+    font-weight: normal;
+}
+
+
+/* 1920x942 */
+body {
+    margin: 0;
+    font-size: 100%;
+}
+
+.text {
+    font-family: artDeco;
+    font-weight: normal;
+    color: #ffd000;
+    text-align: center;
+}
+
+.container {
+    background-image: url("assets/images/home.png");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 15vh;
+    margin-top: 50px;
+    background: #000;
+    padding: 15px;
+}
+
+.start-button {
+    background: #ffd000;
+    font-size: 5vh;
+    color: black;
+    padding: 5px;
+    width: max-content;
+    margin: 20px auto 0 auto;
+    border: black 5px solid;
+    outline: 1px #ffd000 solid;
+}
+
+.start-button:hover {
+    cursor: pointer;
+}
+
+.player {
+    display: none;
+    margin-bottom: 5vh;
+    font-size: 21.23vh;
+    background-color: black;
+    border: #ffd000 solid 5px;
+    padding: 10px;
+}
+
+
+.name-container {
+    border: 4px solid #ffd000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box {
+    background: #ffd000;
+    border: black 7px solid;
+    outline: #ffd000 3px solid;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.name-container .text {
+    font-size: 5vh;
+    margin: 0px 10px;
+}
+
+#player-X {
+    margin-right: 9vw;
+}
+
+#player-O {
+    margin-left: 9vw;
+}
+
+.board-container {
+    position: relative;
+}
+
+.board {
+    display: none;
+    flex-direction: column;
+    border: 5px #ffd000 solid;
+    background-color: black;
+}
+
+.row {
+    display: flex;
+    border: 5px black solid;
+}
+
+.row:nth-child(2) {
+    border-width: 0px 5px;
+}
+
+div[id*="col-"] {
+    background-color: black;
+    border: 3px #ffd000 solid;
+    margin: 5px;
+    width: 8.3vw;
+    height: 16.98vh;
+    font-size: 16.98vh;
+}
+
+.row:nth-child(2) div[id*="col-"] {
+    margin: 0px 5px;
+}
+
+.bottom-text {
+    display: none;
+    color: black;
+    padding: 5px;
+    outline: 2px solid #ffd000;
+    border: 5px solid black;
+    font-size: 5vh;
+    background-color: #ffd000;
+    width: max-content;
+    margin: 30px auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.top-text {
+    background-color: black;
+    display: none;
+    font-size: 10.61vh;
+    position: absolute;
+    top: -23%;
+    right: 0;
+    left: 0;
+}
+
